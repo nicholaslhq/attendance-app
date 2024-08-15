@@ -1,0 +1,105 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+// User Model
+model User {
+  id        String   @id @map("_id")
+  password  String
+  name      String
+  role      Role
+  mode      String   @default("0")
+  createdBy String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deleted   Boolean  @default(false)
+}
+
+// Class Model
+model Class {
+  id          String   @id @default(cuid()) @map("_id")
+  name        String
+  description String?
+  createdBy   String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  deleted     Boolean
+  handleBy    String?
+}
+
+// Session Model
+model Session {
+  id          String   @id @default(cuid()) @map("_id")
+  name        String
+  description String?
+  createdBy   String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  deleted     Boolean
+}
+
+// Student Model
+model Student {
+  id        String   @id @default(cuid()) @map("_id")
+  eName     String
+  cName     String?
+  bName     String?
+  gender    String?
+  createdBy String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deleted   Boolean
+  classId   String?
+}
+
+// Attendance Model
+model Attendance {
+  id        String   @id @default(cuid()) @map("_id")
+  date      DateTime
+  classId   String
+  sessionId String
+}
+
+// AttendanceList Model
+model AttendanceList {
+  id           String   @id @default(cuid()) @map("_id")
+  status       Status?
+  remark       String?
+  createdBy    String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  studentId    String
+  attendanceId String
+}
+
+// Notice Model
+model Notice {
+  id        String   @id @default(cuid()) @map("_id")
+  title     String
+  content   String?
+  createdBy String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deleted   Boolean
+}
+
+//Enums
+enum Role {
+  ADMIN
+  AUDITOR
+  USER
+}
+
+enum Status {
+  PRESENT
+  ABSENT
+  ONLEAVE
+}
