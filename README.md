@@ -8,6 +8,37 @@ Built using modern technologies, the Attendance App ensures a seamless user expe
 
 Key features include a responsive dashboard, efficient attendance management, and user-friendly interfaces—all crafted to make attendance tracking as straightforward as possible. Experience a practical and user-friendly tool that makes attendance management simple and efficient.
 
+## 🖼️ Screenshots
+
+Below are some screenshots of the Attendance App in action:
+
+### Desktop View
+
+The desktop view showcases the Attendance App's full feature set on larger screens. This view provides a detailed and organized interface, enabling efficient management and overview of attendance data with ample space for interactive elements and comprehensive tools.
+
+![image](https://github.com/user-attachments/assets/a66fedb8-5576-4e07-8df5-7c6eaeace15e)
+
+![image](https://github.com/user-attachments/assets/d7a5d965-2821-419d-8c52-1556dc77691d)
+
+![image](https://github.com/user-attachments/assets/ce42fe5f-9bb6-4f89-9ddb-cf9e831d62df)
+
+![image](https://github.com/user-attachments/assets/07ba50dc-b840-4722-9815-982377e5e13c)
+
+### Mobile View
+
+The Mobile View demonstrates how the Attendance App adapts to smaller screens. This view maintains a streamlined interface, making it easy to use the app on the go.
+
+![image](https://github.com/user-attachments/assets/5b5e8410-22f9-4ed8-a9f9-64dcccb58db5)
+
+![image](https://github.com/user-attachments/assets/e2f86676-e7c0-4954-9685-32805fd77a0e)
+
+![image](https://github.com/user-attachments/assets/7305f667-9110-4ec2-b04d-c13741e35973)
+
+![image](https://github.com/user-attachments/assets/c7962a73-7288-4c93-b3da-63080d83bd7c)
+
+![image](https://github.com/user-attachments/assets/fa4b5ef9-d31d-4679-9e4e-a1a8aaffd886)
+
+
 ## 📚 Table of Contents
 
 - [🌟 Features](#-features)
@@ -17,7 +48,7 @@ Key features include a responsive dashboard, efficient attendance management, an
   - [Attendance](#attendance)
   - [Class, Session, and Student Management](#class-session-and-student-management)
   - [User Management](#user-management)
-  - [Insights](#insights-reporting)
+  - [Insights](#insights)
 - [⚙️ Installation and Setup](#-installation-and-setup)
   - [Prerequisites](#prerequisites)
   - [Getting Started](#getting-started)
