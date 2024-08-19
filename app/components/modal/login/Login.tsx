@@ -75,7 +75,7 @@ function Login() {
 		<LoginStyled onSubmit={handleSubmit} theme={theme}>
 			<div className="modal-content">
 				<div className="modal-title">
-					<h1>Attendance System</h1>
+					<h1>Attendance App</h1>
 				</div>
 				<div className="modal-input">
 					<TextField
